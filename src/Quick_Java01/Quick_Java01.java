@@ -5,10 +5,9 @@ import java.util.Scanner;
 public class Quick_Java01 {
 
 	public static void main(String[] args) {
-		
 		Scanner in = new Scanner(System.in);
-		int n1=in.nextInt(),n2=in.nextInt();
 		try{
+			int n1=in.nextInt(),n2=in.nextInt();
 			if(n1>=1e+3 || n2>=1e+3) throw new Exception("입력하신 숫자가 4자리를 넘습니다.");
 			System.out.println(n1/n2);
 		}catch(ArithmeticException e){
